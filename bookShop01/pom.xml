@@ -17,7 +17,7 @@
 		<!-- Spring -->
 		<dependency>
 			<groupId>org.springframework</groupId>
-			<artifactId>spring-context</artifactId>
+			<artifactId>spring-context-support</artifactId>
 			<version>${org.springframework-version}</version>
 			<exclusions>
 				<!-- Exclude Commons Logging in favor of SLF4j -->
@@ -157,6 +157,7 @@
           <artifactId>mysql-connector-java</artifactId>
           <version>5.1.29</version>
       </dependency>
+      
          <!-- myBatis 설정관련 라이브러리 -->
         <dependency>
             <groupId>commons-beanutils</groupId>
@@ -232,6 +233,19 @@
 		    <classifier>jdk15</classifier>    
 		</dependency>
 		
+		<!-- 메일 발송 관련 라이브러리 -->
+		<!-- https://mvnrepository.com/artifact/com.sun.mail/javax.mail -->
+		<dependency>
+		    <groupId>javax.mail</groupId>
+		    <artifactId>javax.mail-api</artifactId>
+		    <version>1.5.4</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>com.sun.mail</groupId>
+		    <artifactId>javax.mail</artifactId>
+		    <version>1.5.4</version>
+		</dependency>	
 		
 	<!-- AOP -->
 		<dependency>
