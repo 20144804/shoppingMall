@@ -1,8 +1,19 @@
 package com.bookshop01.member.vo;
 
+import java.sql.Date;
+
 import org.springframework.stereotype.Component;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 @Component("memberVO")
+@Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class MemberVO {
 	private String member_id;
 	private String member_pw;
